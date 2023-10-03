@@ -15,7 +15,7 @@ public class Main {
         carrinho.adicionarProduto(produto2);
 
         carrinho.pagar(new MeioPagamentoCieloDebitoEstrategia("1234567123456786", "12203063980", "123", "07/24"));
-        carrinho.pagar(new MeioPagamentoCieloCreditoEstrategia("1234567123456786", "12203063980", "123", "09/24"));
+        carrinho.pagar(new MeioPagamentoCieloCreditoEstrategia("1234567123456786", "12203063980", "123", "09/25"));
 
        carrinho.pagar(new MeioPagamentoDinheiroEstrategia());
    }
