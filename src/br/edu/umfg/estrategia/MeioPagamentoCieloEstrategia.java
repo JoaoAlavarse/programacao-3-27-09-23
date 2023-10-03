@@ -1,12 +1,12 @@
 package br.edu.umfg.estrategia;
 
-public class MeioPagamentoCieloEstrategia implements
+public abstract class MeioPagamentoCieloEstrategia implements
         MeioPagamentoEstrategia{
 
-    private String numeroCartao;
-    private String cpf;
-    private String cvv;
-    private String dataValidade;
+    protected String numeroCartao;
+    protected String cpf;
+    protected String cvv;
+    protected String dataValidade;
 
     public MeioPagamentoCieloEstrategia(String numeroCartao,
                                         String cpf, String cvv,
@@ -18,9 +18,12 @@ public class MeioPagamentoCieloEstrategia implements
         this.dataValidade = dataValidade;
     }
 
+    
+
     @Override
     public void pagar(Double valor) {
         System.out.printf("Pagamento via Cielo no valor," +
                 valor + ", realizado com sucesso \n");
     }
+    
 }
